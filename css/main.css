@@ -60,14 +60,15 @@ button {
   justify-content: flex-end;
   align-items: center;
   background: #fafafa;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 20px 15px;
 }
 @media (min-width: 576px) {
   .header-container {
     max-width: 540px;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 @media (min-width: 768px) {
@@ -97,35 +98,24 @@ button {
   align-items: center;
   max-width: 140px;
   padding-right: 15px;
-  /* padding-bottom: 20px; */
 }
-/* @media (min-width: 576px) {
-  .haeder-logo-box {
-    padding-bottom: 25px;
-  }
-} */
 @media (min-width: 768px) {
   .haeder-logo-box {
     width: auto;
     padding-right: 0;
-    /* padding-bottom: 0; */
   }
+}
+.header-logo {
+  display: flex;
 }
 .nav-bar {
   order: -1;
   width: 100%;
-  padding-top: 20px;
-}
-@media (min-width: 576px) {
-  .nav-bar {
-    padding-top: 25px;
-  }
 }
 @media (min-width: 768px) {
   .nav-bar {
     order: 0;
     width: auto;
-    padding-top: 0;
   }
 }
 .nav-bar-list {
@@ -159,16 +149,10 @@ button {
     justify-content: center;
   }
 }
-/* @media (min-width: 576px) {
-  .header-button-box  {
-    padding-bottom: 25px;
-  }
-} */
 @media (min-width: 768px) {
   .header-button-box {
     width: auto;
     padding-left: 0;
-    /* padding-bottom: 0; */
   }
 }
 .header-button {
