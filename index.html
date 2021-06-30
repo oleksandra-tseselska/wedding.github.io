@@ -133,7 +133,7 @@
       <ul class="gifts-list">
         <li class="gifts-list-item">
           <a 
-          class="gift-card-link yellow-focus"
+          class="gift-card-link yellow-focus pseudo-element-hover"
           href="#"
           aria-label="find birthday gift"
           >
@@ -153,7 +153,7 @@
         </li>
         <li class="gifts-list-item">
           <a 
-          class="gift-card-link yellow-focus"
+          class="gift-card-link yellow-focus pseudo-element-hover"
           href="#"
           aria-label="find anniversary gift"
           >
@@ -173,7 +173,7 @@
         </li>
         <li class="gifts-list-item">
           <a 
-          class="gift-card-link yellow-focus"
+          class="gift-card-link yellow-focus pseudo-element-hover"
           href="#"
           aria-label="find valentine's_day gift"
           >
@@ -193,7 +193,7 @@
         </li>
         <li class="gifts-list-item">
           <a 
-          class="gift-card-link yellow-focus"
+          class="gift-card-link yellow-focus pseudo-element-hover"
           href="#"
           aria-label="find christmas gift"
           >
@@ -246,68 +246,72 @@
       <p class="articles-container-pain-text text-center">
         “Try our blog to find the best tips and tricks to select your gift”
       </p>
-      <div class="articles-flex">
-        <ul class="articles-list">
-          <li class="articles-list-item">
-            <article class="big-article">
-              <img src="./img/newlyweds.jpg" alt="photo of newlyweds">
-              <span class="big-article-autor">
+      <ul class="articles-list">
+        <li class="articles-list-item-big">
+          <article class="big-article">
+            <img 
+              class="big-article-img"
+              src="./img/newlyweds.jpg" 
+              alt="photo of newlyweds"
+            >
+            <div class="big-article-desc">
+              <span class="big-article-autor white-text">
                 Mr. John Doe
               </span>
-              <h3 class="big-article-title">
+              <h3 class="big-article-title white-text">
                 The best way to wish your wife
               </h3>
               <a 
-                class="big-article-link text-capitalize"
+                class="big-article-link text-capitalize white-text white-focus"
                 href="#"
-                aria-label="article one  read more"
+                aria-label="article one read more"
                 >
                   Read more
               </a>
-            </article>
-          </li>
-          <li class="articles-list-item">
-            <a 
-              class="article-card-link"
-              href="#"
-              aria-label="article two  read more"
-              >
-                <article>
-                  <h3>
-                    Database to find the gifts for your girlfriend
-                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    ed do eiusmod tempor incididunt ut labore et dolore...
-                  </p>
-                  <span class="text-capitalize">
-                    Read more
-                  </span>
-                </article>
-            </a>
-          </li>
-          <li class="articles-list-item">
-            <a 
-              class="article-card-link"
-              href="#"
-              aria-label="article three read more"
-              >
-                <article>
-                  <h3>
-                    How Artificial Intelligence read your mind to find the best gift
-                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    ed do eiusmod tempor incididunt ut labore et dolore...
-                  </p>
-                  <span class="text-capitalize">
-                    Read more
-                  </span>
-                </article>
-            </a>
-          </li>
-        </ul>
-      </div>
+            </div>
+          </article>
+        </li>
+        <li class="articles-list-item">
+          <a 
+            class="article-card-link pseudo-element-hover yellow-focus"
+            href="#"
+            aria-label="article two read more"
+            >
+              <article class="article-card">
+                <h3 class="article-card-title">
+                  Database to find the gifts for your girlfriend
+                </h3>
+                <p class="article-card-text text-justify"> 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  ed do eiusmod tempor incididunt ut labore et dolore...
+                </p>
+                <span class="article-card-pain-text text-capitalize">
+                  Read more
+                </span>
+              </article>
+          </a>
+        </li>
+        <li class="articles-list-item">
+          <a 
+            class="article-card-link pseudo-element-hover yellow-focus"
+            href="#"
+            aria-label="article three read more"
+            >
+              <article class="article-card">
+                <h3 class="article-card-title">
+                  How Artificial Intelligence read your mind to find the best gift
+                </h3>
+                <p class="article-card-text text-justify">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  ed do eiusmod tempor incididunt ut labore et dolore...
+                </p>
+                <span class="article-card-pain-text text-capitalize">
+                  Read more
+                </span>
+              </article>
+          </a>
+        </li>
+      </ul>
     </section>
   </main>
 </body>
