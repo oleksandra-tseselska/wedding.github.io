@@ -6,6 +6,7 @@ body {
 *:before {
   box-sizing: border-box;
 }
+picture,
 img {
   width: 100%;
   height: auto;
@@ -94,6 +95,9 @@ button {
 .yellow-to-black-act:active {
   color: white;
   background-color: black;
+}
+.picture-inline-flex {
+  display: inline-flex;
 }
 .header-container {
   background-color: #fafafa;
@@ -389,20 +393,30 @@ button {
   padding-right: 15px;
   padding-left: 15px;
 }
+.feature-flex-inner {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 @media (min-width: 576px) {
   .feature-flex-img {
     order: 0;
     width: 50%;
   }
-}
-@media (min-width: 768px) {
-  .feature-flex-img {
-    margin-right: 8.33333%;
+  .feature-flex-inner {
+    width: 50%;
   }
 }
-.feature-flex-inner {
-  padding-right: 15px;
-  padding-left: 15px;
+@media (min-width: 768px) {
+  .feature-flex-inner {
+    width: 41.66666%;
+    margin-left: 8.33333%;
+    padding-right: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .feature-flex-inner {
+    padding-right: 45px;
+  }
 }
 .feture-flex-inner-title {
   font-size: 26px;
@@ -832,6 +846,7 @@ button {
 @media (min-width: 576px) {
   .big-article {
     flex-direction: row;
+    align-items: center;
   }
   .big-article-img {
     width: 38.66666%;
