@@ -158,6 +158,8 @@ button {
   .nav-bar {
     order: 0;
     width: auto;
+    padding-right: 0;
+    padding-left: 0;
     padding-bottom: 0;
   }
 }
@@ -204,6 +206,20 @@ button {
   .header-button {
     font-size: 18px;
     padding: 11px 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .haeder-logo-box {
+    display: inline-flex;
+    width: 8.33333%;
+  }
+  .nav-bar {
+    margin-left: 25%;
+    width: 33.33333%;
+  }
+  .header-button-box {
+    margin-left: 16.66666%;
+    width: 16.66666%;
   }
 }
 .hero-container {
