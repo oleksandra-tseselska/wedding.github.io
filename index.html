@@ -12,22 +12,22 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <header class="header-container">
+  <header class="header-container" id="home">
     <div class="header-flex">
       <div class="haeder-logo-box">
         <a 
-          class="header-logo logo-hover yellow-radius-focus" 
+          class="header-logo yellow-radius-focus" 
           href="#" 
           aria-label="home-page"
           >
-            <img src="./img/logo.svg" alt="our logo">
+            <img src="./img/logo.svg" alt="our logo"  loading="lazy">
         </a>
       </div>
       <nav class="nav-bar">
         <ul class="nav-bar-list">
           <li class="nav-bar-list-item">
             <a 
-              href="#" 
+              href="#home" 
               class="nav-bar-list-item-link yellow-hover yellow-radius-focus"
               >
                 Home
@@ -35,7 +35,7 @@
           </li>
           <li class="nav-bar-list-item">
             <a 
-              href="#" 
+              href="#about" 
               class="nav-bar-list-item-link yellow-hover yellow-radius-focus 
                 text-capitalize "
                 >
@@ -44,7 +44,7 @@
           </li>
           <li class="nav-bar-list-item">
             <a 
-              href="#" 
+              href="#services" 
               class="nav-bar-list-item-link yellow-hover yellow-radius-focus"
               >
                 Services
@@ -52,7 +52,7 @@
           </li>
           <li class="nav-bar-list-item">
             <a 
-              href="#" 
+              href="#blog" 
               class="nav-bar-list-item-link yellow-hover yellow-radius-focus"
               >
                 Blogs
@@ -62,7 +62,7 @@
       </nav>
       <div class="header-button-box">
         <button 
-          class="header-button-box yellow-shadow-hover yellow-radius-focus
+          class="header-button yellow-shadow-hover yellow-radius-focus
           white-to-yellow-act header-button text-uppercase"
           >
             Gift finder
@@ -81,28 +81,38 @@
             Struggling to find a gift for your wife or girlfriend? 
             No&#160;problem!
           </p>
-          <button class="hero-flex-inner-button yellow-radius-focus">
-            <span 
-              class="hero-button-text text-uppercase yellow-shadow-big-hover
-              yellow-to-white-act"
-              >
-                Find gift now
-            </span>
+          <button class= "yellow-radius-focus hero-button-text text-uppercase 
+            yellow-shadow-big-hover white-to-yellow-act">
+              Find gift now
           </button>
         </div>
-        <div class="hero-flex-inner-img">
-          <img src="./img/hero_img.jpg" alt="happy wife">
-        </div>
+        <picture class="picture-inline-flex hero-flex-inner-img">
+          <source 
+            srcset="./img/desktop_webp/hero_img.webp 1x, ./img/desktop_webp/hero_img_2x.webp 2x"
+            type="image/webp"
+          >
+          <source 
+            srcset="./img/desktop_jpeg/hero_img.jpg 1x, ./img/desktop_jpeg/hero_img_2x.jpg 2x" 
+            type="image/jpeg"
+          >
+          <img src="./img/desktop_jpeg/hero_img.jpg" alt="happy wife" loading="lazy">
+        </picture>
       </div>
     </section>
     <section class="feature-container">
       <div class="feature-flex">
-        <img 
-          class="feature-flex-img"
-          src="./img/thanks_card.jpg" 
-          alt="thank's card"
-        >
-        <div class="feature-flex-inner">
+        <picture class="feature-flex-img">
+          <source 
+            srcset="./img/desktop_webp/thanks_card.webp 1x, ./img/desktop_webp/thanks_card_2x.webp 2x"
+            type="image/webp"
+          >
+          <source 
+            srcset="./img/desktop_jpeg/thanks_card.jpg 1x, ./img/desktop_jpeg/thanks_card_2x.jpg 2x" 
+            type="image/jpeg"
+          >
+          <img src="./img/desktop_jpeg/thanks_card.jpg" alt="thank's card" loading="lazy">
+        </picture>
+        <div class="feature-flex-inner" id="about">
           <h2 class="feture-flex-inner-title">
             How we work
           </h2>
@@ -120,7 +130,7 @@
         </div>
       </div>
     </section>
-    <section class="gifts-container">
+    <section class="gifts-container" id="services">
       <h2 class="gifts-title text-center">
         Gifts for all 
         <span class="text-capitalize">
@@ -133,14 +143,25 @@
       <ul class="gifts-list">
         <li class="gifts-list-item">
           <a 
-          class="gift-card-link yellow-focus pseudo-element-hover"
+          class="gift-card-link yellow-focus black-swadow-big-hover"
           href="#"
           aria-label="find birthday gift"
           >
-            <img 
-              src="./img/birthday.jpg" 
-              alt="inflatable ball and cake"
-            >
+            <picture  class="picture-inline-flex">
+              <source 
+                srcset="./img/desktop_webp/birthday.webp 1x, ./img/desktop_webp/brirthday_2x.webp 2x"
+                type="image/webp"
+              >
+              <source 
+                srcset="./img/desktop_jpeg/birthday.jpg 1x, ./img/desktop_jpeg/brirthday_2x.jpg 2x" 
+                type="image/jpeg"
+              >
+              <img 
+                src="./img/desktop_jpeg/birthday.jpg" 
+                alt="inflatable ball and cake" 
+                loading="lazy"
+                >
+            </picture>
             <span class="gift-card-link-inner">
               <span class="gift-card-link-inner-title">
                 Birthday
@@ -153,14 +174,25 @@
         </li>
         <li class="gifts-list-item">
           <a 
-          class="gift-card-link yellow-focus pseudo-element-hover"
+          class="gift-card-link yellow-focus black-swadow-big-hover"
           href="#"
           aria-label="find anniversary gift"
           >
-            <img 
-              src="./img/anniversary.jpg" 
-              alt="shoes with heels, flowers and a book"
-            >
+            <picture  class="picture-inline-flex">
+              <source 
+                srcset="./img/desktop_webp/anniversary.webp 1x, ./img/desktop_webp/anniversary_2x.webp 2x"
+                type="image/webp"
+              >
+              <source 
+                srcset="./img/desktop_jpeg/anniversary.jpg 1x, ./img/desktop_jpeg/anniversary_2x.jpg 2x" 
+                type="image/jpeg"
+              >
+              <img 
+                src="./img/desktop_jpeg/anniversary.jpg" 
+                alt="shoes with heels, flowers and a book" 
+                loading="lazy"
+              >
+            </picture>
             <span class="gift-card-link-inner">
               <span class="gift-card-link-inner-title">
                 Anniversary
@@ -173,14 +205,21 @@
         </li>
         <li class="gifts-list-item">
           <a 
-          class="gift-card-link yellow-focus pseudo-element-hover"
+          class="gift-card-link yellow-focus black-swadow-big-hover"
           href="#"
           aria-label="find valentine's_day gift"
           >
-            <img 
-              src="./img/valentine's_day.jpg" 
-              alt="gift with a kiss postcard"
-            >
+            <picture  class="picture-inline-flex">
+              <source 
+                srcset="./img/desktop_webp/valentine's_day.webp 1x, ./img/desktop_webp/valentine's_day_2x.webp 2x"
+                type="image/webp"
+              >
+              <source 
+                srcset="./img/desktop_jpeg/valentine's_day.jpg 1x, ./img/desktop_jpeg/valentine's_day_2x.jpg 2x" 
+                type="image/jpeg"
+              >
+              <img src="./img/desktop_jpeg/valentine's_day.jpg" alt="gift with a kiss postcard" loading="lazy">
+            </picture>
             <span class="gift-card-link-inner">
               <span class="gift-card-link-inner-title text-capitalize">
                 Valentine's day
@@ -193,14 +232,21 @@
         </li>
         <li class="gifts-list-item">
           <a 
-          class="gift-card-link yellow-focus pseudo-element-hover"
+          class="gift-card-link yellow-focus black-swadow-big-hover"
           href="#"
           aria-label="find christmas gift"
           >
-            <img 
-              src="./img/christmas.jpg" 
-              alt="christmas tree"
-            >
+            <picture  class="picture-inline-flex">
+              <source 
+                srcset="./img/desktop_webp/christmas.webp 1x, ./img/desktop_webp/christmas_2x.webp 2x"
+                type="image/webp"
+              >
+              <source 
+                srcset="./img/desktop_jpeg/christmas.jpg 1x, ./img/desktop_jpeg/christmas_2x.jpg 2x" 
+                type="image/jpeg"
+              >
+              <img src="./img/desktop_jpeg/christmas.jpg" alt="christmas tree" loading="lazy">
+            </picture>
             <span class="gift-card-link-inner">
               <span class="gift-card-link-inner-title">
                 Christmas
@@ -239,7 +285,7 @@
         </div>
       </div>
     </section>
-    <section class="articles-container">
+    <section class="articles-container" id="blog">
       <h2 class="articles-container-title text-capitalize text-center">
         Our best blogs ever
       </h2>
@@ -249,11 +295,17 @@
       <ul class="articles-list">
         <li class="articles-list-item-big">
           <article class="big-article">
-            <img 
-              class="big-article-img"
-              src="./img/newlyweds.jpg" 
-              alt="photo of newlyweds"
-            >
+            <picture class="picture-inline-flex big-article-img">
+              <source 
+                srcset="./img/desktop_webp/newlyweds.webp 1x, ./img/desktop_webp/newlyweds_2x.webp 2x"
+                type="image/webp"
+              >
+              <source 
+                srcset="./img/desktop_jpeg/newlyweds.jpg 1x, ./img/desktop_jpeg/newlyweds_2x.jpg 2x" 
+                type="image/jpeg"
+              >
+              <img src="./img/desktop_jpeg/newlyweds.jpg" alt="photo of newlyweds" loading="lazy">
+            </picture>
             <div class="big-article-desc">
               <span class="big-article-autor white-text">
                 Mr. John Doe
@@ -274,7 +326,7 @@
         </li>
         <li class="articles-list-item">
           <a 
-            class="article-card-link pseudo-element-hover yellow-focus"
+            class="article-card-link yellow-focus black-swadow-big-hover"
             href="#"
             aria-label="article two read more"
             >
@@ -294,7 +346,7 @@
         </li>
         <li class="articles-list-item">
           <a 
-            class="article-card-link pseudo-element-hover yellow-focus"
+            class="article-card-link yellow-focus black-swadow-big-hover"
             href="#"
             aria-label="article three read more"
             >
@@ -320,7 +372,7 @@
       <ul class="footer-nav-links">
         <li class="footer-nav-links-item">
           <a 
-            href="#" 
+            href="#home" 
             class="footer-nav-link yellow-radius-focus yellow-hover"
             aria-label="home page"
             >
@@ -328,7 +380,7 @@
           </a>
         </li>
         <li class="footer-nav-links-item">
-          <a href="#" 
+          <a href="#about" 
             class="footer-nav-link yellow-radius-focus yellow-hover"
             aria-label="about us"
             >
@@ -338,22 +390,22 @@
         <li class="footer-nav-links-item footer-nav-links-item-logo">
           <a 
             href="#" 
-            class="footer-nav-link yellow-radius-focus logo-hover"
+            class="footer-nav-link-logo yellow-radius-focus"
             aria-label="our logo"
             >
-              <img src="./img/logo-yellow.svg" alt="our logo">
+              <img src="./img/logo-yellow.svg" alt="our logo"  loading="lazy">
           </a>
         </li>
         <li class="footer-nav-links-item">
           <a 
-            href="#" 
+            href="#services" 
             class="footer-nav-link yellow-radius-focus yellow-hover"
             >
               Service
           </a>
         </li>
         <li class="footer-nav-links-item">
-          <a href="#" 
+          <a href="#blog" 
             class="footer-nav-link yellow-radius-focus yellow-hover"
             aria-label="blog"
             >
